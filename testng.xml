@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test verbose="2" preserve-order="true" name="C:/Users/LENOVO I5 8TH/IdeaProjects/First_Maven_Project">
+      <!--  <groups>
+            <run>
+                <include name="reg" />
+            </run>
+        </groups>
+        -->
+        <classes>
+            <class name="Tests.LoginTest">
+                <methods>
+                    <include name="validLogin"/>
+                    <exclude name="invalidLogin"/>
+                </methods>
+            </class>
+            <class name="Tests.LogoutTest">
+                <methods>
+                    <include name="performLogout"/>
+                </methods>
+            </class>
+
+            <class name="Tests.AnnotationsTest">
+                <methods>
+                    <exclude name="beforeGroup"/>
+                    <exclude name="Test1"/>
+                    <exclude name="Test2"/>
+                    <exclude name="afterGroup"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
